@@ -8,5 +8,6 @@ __pycache__/
 # Ignore IDE configs (optional if you don’t want .idea tracked)
 .idea/
 
-# Ignore input data files
-data_input/
+# Keep the folder but ignore Excel files inside
+data_input/*.xlsx
+data_input/samples/*.xlsx
