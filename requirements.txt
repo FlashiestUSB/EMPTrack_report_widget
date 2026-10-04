@@ -1,0 +1,20 @@
+# Core Python dependencies for EMPTrack report analysis
+
+# Web framework
+Flask==2.3.3
+
+# Database
+psycopg2-binary==2.9.9
+
+# Data analysis
+pandas==2.2.2
+numpy==1.26.4
+
+# Computer vision
+opencv-python==4.10.0.84
+
+# Plotting / stats (optional, if used in stats.py)
+matplotlib==3.9.2
+
+# Testing
+pytest==8.2.2
