@@ -1,0 +1,12 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+.venv/
+
+# Ignore IDE configs (optional if you don’t want .idea tracked)
+.idea/
+
+# Ignore input data files
+data_input/
