@@ -270,3 +270,12 @@ def apply_min_duration_cutoff(path, min_duration=pd.Timedelta(seconds=20)):
                 cleaned[-1] = (prev_loc, prev_start, new_end, new_duration)
             # Otherwise skip
     return cleaned
+
+
+def format_duration2(td: pd.Timedelta) -> str:
+    """Format Timedelta to H:MM:SS without '0 days'."""
+    total_seconds = int(td.total_seconds())
+    hours, remainder = divmod(total_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    return f"{hours}h {minutes}m {seconds}s" if hours else f"{minutes}m {seconds}s"
+
